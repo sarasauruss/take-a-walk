@@ -42,7 +42,7 @@ function preload() {
 }
 
 function setup() {
-	new Canvas(windowWidth/4, windowHeight);
+	new Canvas(windowWidth/4, windowHeight, 'pixelated x4');
 
 	textAlign(CENTER);
 	imageMode(CENTER);
