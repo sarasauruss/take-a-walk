@@ -322,7 +322,7 @@ function end(){
 		image(gemImg, width/2, height - 27, 50, 50);
 		textSize(width/25);
 		text("take another walk?", width/2, height + 40);
-	} else if (picked >= (numFlowers-2)){
+	} else if (picked >= (numFlowers-3)){
 		textFont(font);
 		fill(255);
 		stroke(0);
