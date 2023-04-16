@@ -166,7 +166,6 @@ function collectPellets(hero, pellet){
 
 function draw() {
 	clear();
-	background('red');
 
 	camera.on();
 
@@ -201,7 +200,7 @@ function splash(){
 
 
 function game(){
-	background('green');
+	background('red');
 	noCursor();
 	backSprites.visible = true;
 	bushSprites.visible = true;
