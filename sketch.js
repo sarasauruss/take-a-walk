@@ -259,7 +259,7 @@ function game(){
 		camera.position.y = hero.position.y + 405.5;
 	}
 
-	if(hero.position.y >= height +100 ){
+	if(hero.position.y >=  73*15 ){
 		hero.ani = 'idle';
 		hero.speed = 0;
 		stage++;
