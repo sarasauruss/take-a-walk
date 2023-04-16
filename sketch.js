@@ -166,7 +166,7 @@ function collectPellets(hero, pellet){
 
 function draw() {
 	clear();
-	background('green');
+	background('red');
 
 	camera.on();
 
