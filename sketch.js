@@ -200,7 +200,7 @@ function splash(){
 
 
 function game(){
-	background('red');
+	background('green');
 	noCursor();
 	backSprites.visible = true;
 	bushSprites.visible = true;
@@ -258,7 +258,7 @@ function game(){
 		camera.position.y = hero.position.y + 405.5;
 	}
 
-	if(hero.position.y >=  73*15 ){
+	if(hero.position.y >=  (73*15 - 20) ){
 		hero.ani = 'idle';
 		hero.speed = 0;
 		stage++;
