@@ -72,7 +72,7 @@ function setup() {
 	numBackSprites = 30;
 	for (let i = 0; i < numBackSprites; i++){
 		let backSprite = createSprite(
-			width/2 + 7,
+			width/2,
 			i*11.2,
 			backSpritesWidth,
 			backSpritesHeight,
@@ -89,14 +89,14 @@ function setup() {
 	numBushSprites = 30;
 	for (let i = 0; i < numBushSprites; i = i + 1){
 		let bushSpriteRight = createSprite(
-			width/2 + 100, 
+			width/2 + 93.5, 
 			i*11.2, 
 			bushSprites_width, 
 			bushSprites_height,
 			'static'
 			)
 		let bushSpriteLeft = createSprite(
-			width/2 - 100,
+			width/2 - 96.5,
 			i*11.2, 
 			bushSprites_width,
 			bushSprites_height,
@@ -212,18 +212,18 @@ function game(){
 	
 
 	var firstBushSprite = bushSprites[0];
-	if (firstBushSprite.position.y <= camera.position.y - 510){
+	if (firstBushSprite.position.y <= camera.position.y - 600){
 		bushSprites.remove(firstBushSprite);
 		firstBushSprite.position.y = 
-			firstBushSprite.position.y + numBushSprites * firstBushSprite.height + 180; //change the place they regenerate
+			firstBushSprite.position.y + numBushSprites * firstBushSprite.height + 230; //change the place they regenerate
 		bushSprites.add(firstBushSprite);
 	}
 
 	var firstBackSprite = backSprites[0];
-	if (firstBackSprite.position.y <= camera.position.y - 510){
+	if (firstBackSprite.position.y <= camera.position.y - 600){
 		backSprites.remove(firstBackSprite);
 		firstBackSprite.position.y = 
-			firstBackSprite.position.y + numBackSprites * firstBackSprite.height + 180;
+			firstBackSprite.position.y + numBackSprites * firstBackSprite.height + 230;
 		backSprites.add(firstBackSprite);
 	}
 	
@@ -254,11 +254,11 @@ function game(){
 		hero.ani = 'idle';
 	}
 
-	if (hero.position.y >= height/9 && hero.position.y < height - 60){
+	if (hero.position.y >= height/10 && hero.position.y < height - 60){
 		camera.position.y = hero.position.y + 405.5;
 	}
 
-	if(hero.position.y >=  (73*15 - 20) ){
+	if(hero.position.y >= (73*15 - 20)){
 		hero.ani = 'idle';
 		hero.speed = 0;
 		stage++;
@@ -321,7 +321,7 @@ function end(){
 		image(gemImg, width/2, height - 27, 50, 50);
 		textSize(width/25);
 		text("take another walk?", width/2, height + 40);
-	} else if (picked >= (numFlowers-3)){
+	} else if (picked >= (numFlowers-2)){
 		textFont(font);
 		fill(255);
 		stroke(0);
