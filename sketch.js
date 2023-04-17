@@ -89,7 +89,7 @@ function setup() {
 	numBushSprites = 30;
 	for (let i = 0; i < numBushSprites; i = i + 1){
 		let bushSpriteRight = createSprite(
-			width/2 + 93.5, 
+			width/2 + 90, 
 			i*11.2, 
 			bushSprites_width, 
 			bushSprites_height,
